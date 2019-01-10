@@ -1,7 +1,7 @@
 import os
 import signal
 from flask import Flask
-from fib_summ import fib_summaraizer
+from fib_summ import fib_summaraiser
 
 #commit
 app = Flask(__name__)
@@ -12,7 +12,7 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 @app.route("/")
 def fib_summaraizer():
     page = '<html><body><h1>'
-    page += fib_summaraizer.sum_fibonachi()
+    page += fib_summaraiser.fibonachi()
     page += '</h1></body></html>'
     return page
 

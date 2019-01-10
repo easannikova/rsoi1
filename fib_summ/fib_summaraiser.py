@@ -10,6 +10,10 @@ def sum_fibonachi(n):
         i+=1
     return sum
 
-if __name__ == "__main__":
+def fibonachi():
     n = random.randint(0, 15)
-    print('Summary of first', n+1, 'numbers of fibonacci series is', sum_fibonachi(n))
+    res = 'Summary of first ' + str(n+1) + ' numbers of fibonacci series is ' + str(sum_fibonachi(n))
+    return res
+
+if __name__ == "__main__":
+    print(fibonachi())
